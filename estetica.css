@@ -1,4 +1,5 @@
 *{
+ background: #de5470;
  margin: 0;
  padding: 0;
  box-sizing: border-box;
@@ -15,7 +16,6 @@ body {
 
 
 .topoCabeçalho {
- background: #de5470;
  background: linear-gradient(15deg,rgba(222, 84, 112, 1) 0%, rgba(242, 138, 159, 1) 50%, rgba(250, 185, 185, 1) 100%);
  color: white;
  text-align: center;
@@ -28,10 +28,11 @@ body {
 
 nav {
  display: flex;
+ flex-wrap:wrap;
  align-items: center;
  justify-content: space-between;
  background-color: white;
- padding: 45px 20px;
+ padding: 20px;
  gap: 10px;
 }
 
@@ -89,7 +90,9 @@ nav {
 nav ul {
  list-style: none;
  display: flex;
- gap: 20px;
+ flex-wrap:wrap;
+ gap: 10px;
+ justify-content:center;
 }
 
 
@@ -215,6 +218,54 @@ nav ul li a {
 .destaque img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 600px){
+ .topoCabeçalho {
+    font-size: 16px;
+    padding: 30px 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .barraPesquisa {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .entradaBarraPesquisa {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .contato,
+  .sobre-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 5px auto;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .side-menu,
+  .sobre-menu {
+    width: 100%;
+  }
+
+  .sobre-content {
+    padding: 20px;
+  }
 }
 
 
