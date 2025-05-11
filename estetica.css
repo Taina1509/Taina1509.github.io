@@ -1,5 +1,4 @@
 *{
-background: #de5470;*{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
@@ -16,6 +15,7 @@ body {
 
 
 .topoCabeçalho {
+ background: #de5470;
  background: linear-gradient(15deg,rgba(222, 84, 112, 1) 0%, rgba(242, 138, 159, 1) 50%, rgba(250, 185, 185, 1) 100%);
  color: white;
  text-align: center;
@@ -30,7 +30,7 @@ nav {
  display: flex;
  align-items: center;
  justify-content: space-between;
- background-color: white;
+ background-color: #E9D7CO;
  padding: 45px 20px;
  gap: 10px;
 }
@@ -141,6 +141,7 @@ nav ul li a {
 
 
 
+
 .side-menu {
  position: fixed;
  top: 0;
@@ -153,6 +154,11 @@ nav ul li a {
  transform: translateX(100%);
 }
 
+
+
+
+
+}
 
 .menu-content {
   padding: 40px 20px 20px 20px; 
@@ -175,7 +181,8 @@ nav ul li a {
  transform: translateX(0);
 }
 
- 
+
+
 .sobre-menu {
  display: none;
  position: fixed;
@@ -188,14 +195,21 @@ nav ul li a {
 }
 
 
+
+
 .sobre-content {
  padding: 40px;
 }
 
 
+
+
 .sobre-content h2 {
  margin-bottom: 30px;
 }
+
+
+
 
 
 .destaque img {
@@ -205,4 +219,4 @@ nav ul li a {
 
 
 
-
+}
