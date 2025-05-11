@@ -1,5 +1,5 @@
 *{
- background: #de5470;
+background: #de5470;*{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
@@ -28,11 +28,10 @@ body {
 
 nav {
  display: flex;
- flex-wrap:wrap;
  align-items: center;
  justify-content: space-between;
  background-color: white;
- padding: 20px;
+ padding: 45px 20px;
  gap: 10px;
 }
 
@@ -90,9 +89,7 @@ nav {
 nav ul {
  list-style: none;
  display: flex;
- flex-wrap:wrap;
- gap: 10px;
- justify-content:center;
+ gap: 20px;
 }
 
 
@@ -144,7 +141,6 @@ nav ul li a {
 
 
 
-
 .side-menu {
  position: fixed;
  top: 0;
@@ -156,11 +152,6 @@ nav ul li a {
  transition: transform 0.3s ease-in-out;
  transform: translateX(100%);
 }
-
-
-
-
-
 
 
 .menu-content {
@@ -184,8 +175,7 @@ nav ul li a {
  transform: translateX(0);
 }
 
-
-
+ 
 .sobre-menu {
  display: none;
  position: fixed;
@@ -198,13 +188,9 @@ nav ul li a {
 }
 
 
-
-
 .sobre-content {
  padding: 40px;
 }
-
-
 
 
 .sobre-content h2 {
@@ -212,62 +198,10 @@ nav ul li a {
 }
 
 
-
-
-
 .destaque img {
   max-width: 100%;
   height: auto;
 }
-
-@media (max-width: 600px){
- .topoCabeçalho {
-    font-size: 16px;
-    padding: 30px 15px;
-  }
-
-  nav {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .barraPesquisa {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 10px;
-  }
-
-  .entradaBarraPesquisa {
-    width: 100%;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
-  }
-
-  .contato,
-  .sobre-btn {
-    width: 100%;
-    max-width: 200px;
-    margin: 5px auto;
-  }
-
-  .logo {
-    margin-bottom: 10px;
-  }
-
-  .side-menu,
-  .sobre-menu {
-    width: 100%;
-  }
-
-  .sobre-content {
-    padding: 20px;
-  }
-}
-
 
 
 
